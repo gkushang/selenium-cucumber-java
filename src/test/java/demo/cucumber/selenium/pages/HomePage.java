@@ -16,7 +16,7 @@ public class HomePage
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "li.visible>a.snav-action-logout")
+    @FindBy(css = "li.visible>a.nav-action-logout")
     WebElement loginButton;
 
     public LoginPage clickLogin()

@@ -1,7 +1,5 @@
 package demo.cucumber.selenium.stepdefs;
 
-import java.util.concurrent.TimeUnit;
-
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
 import cucumber.api.java.After;
@@ -33,7 +31,7 @@ public class BeforeAfter
         _driver = WebDriverFactory.getDriverFromMap("firefox").getDriver();
 
         //implicit wait
-        _driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
+//        _driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
 
         _bindings.setDriver(_driver);
 
